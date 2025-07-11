@@ -429,11 +429,11 @@
     ]
   },
   {
-    "objectID": "modeling_metabolic_syndrome.html#dopamine",
-    "href": "modeling_metabolic_syndrome.html#dopamine",
+    "objectID": "modeling_metabolic_syndrome.html#clustered-image-maps-1",
+    "href": "modeling_metabolic_syndrome.html#clustered-image-maps-1",
     "title": "Modeling & Assessing Metabolic Syndrome In Rats (Metabolite Added Value)",
-    "section": "Dopamine",
-    "text": "Dopamine\n \n\n\n\n\n\n\n\n\n\n\n\n(a) Proline at Month 0 : Baseline\n\n\n\n\n\n\n\n\n\n\n\n(b) Proline at Months 1-3 : Treatment\n\n\n\n\n\n\n\nFigure 215: Proportion of nutritional model instances per metabolite concentration quantile (denoted by the average value of concentrations within each quantile).\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n(a) Nutritional Model Odds Ratio on dopamine. HC vs C difference\n\n\n\n\n\n\n\n\n\n\n\n\n\n(b) Nutritional Model Odds Ratio on dopamine. HFHC vs C difference\n\n\n\n\n\n\n\n\n\n\n\n\n\n(c) Nutritional Model Odds Ratio on dopamine. HFHC vs HC difference\n\n\n\n\n\n\n\nFigure 216: Average Treatment Effects (ATE)\n\n\n\n \n\n\n\n\n\n\n\n\nFigure 217: dopamine nutritional model differences from baseline at t0 (trends)\n\n\n\n\n\n \n \n\n\n\n\n\n\n\n\nFigure 218: dopamine nutritional model differences from baseline at t0 (split view). Points denote median concentrations and lines denote the corresponding central 80% likelihood intervals.",
+    "section": "Clustered Image Maps",
+    "text": "Clustered Image Maps\nUsing the amino acids as per the comparison table in the beginning of this section i.e. amino acids that have shown significant difference in either the C to HC direction or the C to HFHC direction.\n\nControl (C) To High Carbs (HC)\n \n\n\n\n\n\n\n\n\n\n\n\n(a) Month 1\n\n\n\n\n\n\n\n\n\n\n\n(b) Month 2\n\n\n\n\n\n\n\n\n\n\n\n(c) Month 3\n\n\n\n\n\n\n\nFigure 269: PCA on each treatment month and using the log fold change of amino acid concentration from baseline. Blue color denotes the Control group while orange color denotes the High Carbs nutritional model.\n\n\n\n \n\n\n\n\n\n\n\n\nFigure 270: Clustered heatmap of amino acid concentration fold changes of month 1 from baseline. Here the significant lipids are used that have been found to have a large difference between the Controlsand High Carbs nutritional models. The vertical purple dotted line on the left cuts the amino acid dendrogram into 5 clusters.\n\n\n\n\n\n \n\n\n\n\n\n\n\n\nFigure 271: Clustered heatmap of amino acid concentration fold changes of month 2 from baseline. Here the significant lipids are used that have been found to have a large difference between the Controlsand High Carbs nutritional models. The vertical purple dotted line on the left cuts the amino acid dendrogram into 4 clusters.\n\n\n\n\n\n \n\n\n\n\n\n\n\n\nFigure 272: Clustered heatmap of amino acid concentration fold changes of month 3 from baseline. Here the significant lipids are used that have been found to have a large difference between the Controlsand High Carbs nutritional models. The vertical purple dotted line on the left cuts the amino acid dendrogram into 5 clusters.\n\n\n\n\n\n \n\n\nControl (C) To High Fat High Carbs (HC)\n \n\n\n\n\n\n\n\n\n\n\n\n(a) Month 1\n\n\n\n\n\n\n\n\n\n\n\n(b) Month 2\n\n\n\n\n\n\n\n\n\n\n\n(c) Month 3\n\n\n\n\n\n\n\nFigure 273: PCA on each treatment month and using the log fold change of amino acid concentration from baseline. Blue color denotes the Control group while orange color denotes the High Fat High Carbs nutritional model.\n\n\n\n \n\n\n\n\n\n\n\n\nFigure 274: Clustered heatmap of amino acid concentration fold changes of month 1 from baseline. Here the significant lipids are used that have been found to have a large difference between the Controlsand High Fat High Carbs nutritional models. The vertical purple dotted line on the left cuts the amino acid dendrogram into `` clusters.\n\n\n\n\n\n \n\n\n\n\n\n\n\n\nFigure 275: Clustered heatmap of amino acid concentration fold changes of month 2 from baseline. Here the significant lipids are used that have been found to have a large difference between the Controlsand High Fat High Carbs nutritional models. The vertical purple dotted line on the left cuts the amino acid dendrogram into `` clusters.\n\n\n\n\n\n \n\n\n\n\n\n\n\n\nFigure 276: Clustered heatmap of amino acid concentration fold changes of month 3 from baseline. Here the significant lipids are used that have been found to have a large difference between the Controlsand High Fat High Carbs nutritional models. The vertical purple dotted line on the left cuts the amino acid dendrogram into `` clusters.",
     "crumbs": [
       "Sections",
       "Modeling"
@@ -445,104 +445,5 @@
     "title": "notes_metabolic_syndrome",
     "section": "",
     "text": "References & Research Notes\n\nhttps://stats.stackexchange.com/questions/637773/why-does-harrell-argue-for-ignoring-y-during-data-reduction\n\nOne of the worst things you can do with data is to take a huge number of collinear features and predict to find the “right” features that predict Y.\n\nhttps://stats.stackexchange.com/questions/296164/does-it-make-sense-to-run-a-stepwise-regression-on-components-estimated-through\nhttps://stats.stackexchange.com/questions/441860/isnt-it-futile-to-try-to-fix-multicollinearity\n\nIf the goal is prediction then your proposed solution sounds agreeable, but inference is a whole other beast.\nThe fact is that the theory, for example concerning sampling distributions of coefficients, is not capable of conditioning in such model selection procedures. Frank Harrell talks a little bit about this in Regression Modelling Strategies in the section about stepwise regression.\nStatistics is not an algorithmic truth generating process. You need to be able to say “I think X is related to the outcome” in order to make inferences of the nature statistics affords us.\n\nhttps://stats.stackexchange.com/questions/515412/circular-reasoning-in-harrell-bbr-18-19\n\nyou agree and understand why we should prefer c-index and likelihood ratio chi square (LHRCS) to classification accuracy\n\nhttps://stats.stackexchange.com/questions/621395/how-can-i-automatically-perform-multiple-linear-regressions-in-r-to-identify-the\n\nMy advice is to NOT automate this. There are a variety of methods to do automated model selection (forward, backward, stepwise). Of these, the only ones that I would use are penalized methods such as LASSO. What you seem to want is all subsets regression, which is possible in R. There are a few methods (you can Google “all subsets regression in R” to find some) but these aren’t good. P values will be too low, standard errors too small, models too complex and parameter estimates biased away from 0. (See Frank Harrell’s book Regression Modeling Strategies for details, examples, proofs and so on).\nWorse: It stops you from thinking.\nChoose models that make sense. Just a few of them. Compare those. You’ve already shown us that you’ve done some of this.\nIf you are interested in uncovering interactions, then trees (or some offshoot of them) may be good. I’m not sure why you are opposed.\nIf you want to look at combinations of variables, and don’t need to include the original variables, then partial least squares might be good. From the variables you’ve listed, it looks like the first component will be “size”, but that may be fine.\nHarrell: The worst thing I can think of saying about variable selection methods is that they fail at what they pretend to do. They can’t select the right variables. And small changes in the dataset result in different variables selected. They there is their destruction of standard errors …\n\nhttps://stats.stackexchange.com/questions/201061/whats-wrong-with-data-guided-modeling-in-regression\nhttps://stats.stackexchange.com/questions/200242/minimum-number-of-observations-needed-for-penalized-regression/200368#200368\n\nPenalized estimation can be used for very small sample sizes; it’s just that the estimates will be shrunk to the mean very heavily, so the estimates will be conservative. But the intercept in the model is not shrunk\n\nhttps://stats.stackexchange.com/questions/491861/penalized-or-standard-logistic-regression"
-  },
-  {
-    "objectID": "modeling_metabolic_syndrome.html#phenol-sulfate",
-    "href": "modeling_metabolic_syndrome.html#phenol-sulfate",
-    "title": "Modeling & Assessing Metabolic Syndrome In Rats (Metabolite Added Value)",
-    "section": "Phenol Sulfate",
-    "text": "Phenol Sulfate\n \n\n\n\n\n\n\n\n\n\n\n\n(a) Proline at Month 0 : Baseline\n\n\n\n\n\n\n\n\n\n\n\n(b) Proline at Months 1-3 : Treatment\n\n\n\n\n\n\n\nFigure 219: Proportion of nutritional model instances per metabolite concentration quantile (denoted by the average value of concentrations within each quantile).\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n(a) Nutritional Model Odds Ratio on phenol_sulfate. HC vs C difference\n\n\n\n\n\n\n\n\n\n\n\n\n\n(b) Nutritional Model Odds Ratio on phenol_sulfate. HFHC vs C difference\n\n\n\n\n\n\n\n\n\n\n\n\n\n(c) Nutritional Model Odds Ratio on phenol_sulfate. HFHC vs HC difference\n\n\n\n\n\n\n\nFigure 220: Average Treatment Effects (ATE)\n\n\n\n \n\n\n\n\n\n\n\n\nFigure 221: phenol_sulfate nutritional model differences from baseline at t0 (trends)\n\n\n\n\n\n \n \n\n\n\n\n\n\n\n\nFigure 222: phenol_sulfate nutritional model differences from baseline at t0 (split view). Points denote median concentrations and lines denote the corresponding central 80% likelihood intervals.",
-    "crumbs": [
-      "Sections",
-      "Modeling"
-    ]
-  },
-  {
-    "objectID": "modeling_metabolic_syndrome.html#p-hydroxyphenyl-acetic-acid",
-    "href": "modeling_metabolic_syndrome.html#p-hydroxyphenyl-acetic-acid",
-    "title": "Modeling & Assessing Metabolic Syndrome In Rats (Metabolite Added Value)",
-    "section": "P Hydroxyphenyl Acetic Acid",
-    "text": "P Hydroxyphenyl Acetic Acid\n \n\n\n\n\n\n\n\n\n\n\n\n(a) Proline at Month 0 : Baseline\n\n\n\n\n\n\n\n\n\n\n\n(b) Proline at Months 1-3 : Treatment\n\n\n\n\n\n\n\nFigure 223: Proportion of nutritional model instances per metabolite concentration quantile (denoted by the average value of concentrations within each quantile).\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n(a) Nutritional Model Odds Ratio on p_hydroxyphenyl_acetic_acid. HC vs C difference\n\n\n\n\n\n\n\n\n\n\n\n\n\n(b) Nutritional Model Odds Ratio on p_hydroxyphenyl_acetic_acid. HFHC vs C difference\n\n\n\n\n\n\n\n\n\n\n\n\n\n(c) Nutritional Model Odds Ratio on p_hydroxyphenyl_acetic_acid. HFHC vs HC difference\n\n\n\n\n\n\n\nFigure 224: Average Treatment Effects (ATE)\n\n\n\n \n\n\n\n\n\n\n\n\nFigure 225: p_hydroxyphenyl_acetic_acid nutritional model differences from baseline at t0 (trends)\n\n\n\n\n\n \n \n\n\n\n\n\n\n\n\nFigure 226: p_hydroxyphenyl_acetic_acid nutritional model differences from baseline at t0 (split view). Points denote median concentrations and lines denote the corresponding central 80% likelihood intervals.",
-    "crumbs": [
-      "Sections",
-      "Modeling"
-    ]
-  },
-  {
-    "objectID": "modeling_metabolic_syndrome.html#tyramine",
-    "href": "modeling_metabolic_syndrome.html#tyramine",
-    "title": "Modeling & Assessing Metabolic Syndrome In Rats (Metabolite Added Value)",
-    "section": "Tyramine",
-    "text": "Tyramine\n \n\n\n\n\n\n\n\n\n\n\n\n(a) Proline at Month 0 : Baseline\n\n\n\n\n\n\n\n\n\n\n\n(b) Proline at Months 1-3 : Treatment\n\n\n\n\n\n\n\nFigure 227: Proportion of nutritional model instances per metabolite concentration quantile (denoted by the average value of concentrations within each quantile).\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n(a) Nutritional Model Odds Ratio on tyramine. HC vs C difference\n\n\n\n\n\n\n\n\n\n\n\n\n\n(b) Nutritional Model Odds Ratio on tyramine. HFHC vs C difference\n\n\n\n\n\n\n\n\n\n\n\n\n\n(c) Nutritional Model Odds Ratio on tyramine. HFHC vs HC difference\n\n\n\n\n\n\n\nFigure 228: Average Treatment Effects (ATE)\n\n\n\n \n\n\n\n\n\n\n\n\nFigure 229: tyramine nutritional model differences from baseline at t0 (trends)\n\n\n\n\n\n \n \n\n\n\n\n\n\n\n\nFigure 230: tyramine nutritional model differences from baseline at t0 (split view). Points denote median concentrations and lines denote the corresponding central 80% likelihood intervals.",
-    "crumbs": [
-      "Sections",
-      "Modeling"
-    ]
-  },
-  {
-    "objectID": "modeling_metabolic_syndrome.html#tyrosine",
-    "href": "modeling_metabolic_syndrome.html#tyrosine",
-    "title": "Modeling & Assessing Metabolic Syndrome In Rats (Metabolite Added Value)",
-    "section": "Tyrosine",
-    "text": "Tyrosine\n \n\n\n\n\n\n\n\n\n\n\n\n(a) Proline at Month 0 : Baseline\n\n\n\n\n\n\n\n\n\n\n\n(b) Proline at Months 1-3 : Treatment\n\n\n\n\n\n\n\nFigure 231: Proportion of nutritional model instances per metabolite concentration quantile (denoted by the average value of concentrations within each quantile).\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n(a) Nutritional Model Odds Ratio on tyrosine. HC vs C difference\n\n\n\n\n\n\n\n\n\n\n\n\n\n(b) Nutritional Model Odds Ratio on tyrosine. HFHC vs C difference\n\n\n\n\n\n\n\n\n\n\n\n\n\n(c) Nutritional Model Odds Ratio on tyrosine. HFHC vs HC difference\n\n\n\n\n\n\n\nFigure 232: Average Treatment Effects (ATE)\n\n\n\n \n\n\n\n\n\n\n\n\nFigure 233: tyrosine nutritional model differences from baseline at t0 (trends)\n\n\n\n\n\n \n \n\n\n\n\n\n\n\n\nFigure 234: tyrosine nutritional model differences from baseline at t0 (split view). Points denote median concentrations and lines denote the corresponding central 80% likelihood intervals.",
-    "crumbs": [
-      "Sections",
-      "Modeling"
-    ]
-  },
-  {
-    "objectID": "modeling_metabolic_syndrome.html#p-hydroxyphenyllactic-acid",
-    "href": "modeling_metabolic_syndrome.html#p-hydroxyphenyllactic-acid",
-    "title": "Modeling & Assessing Metabolic Syndrome In Rats (Metabolite Added Value)",
-    "section": "P Hydroxyphenyllactic Acid",
-    "text": "P Hydroxyphenyllactic Acid",
-    "crumbs": [
-      "Sections",
-      "Modeling"
-    ]
-  },
-  {
-    "objectID": "modeling_metabolic_syndrome.html#indole3lactic-acid",
-    "href": "modeling_metabolic_syndrome.html#indole3lactic-acid",
-    "title": "Modeling & Assessing Metabolic Syndrome In Rats (Metabolite Added Value)",
-    "section": "Indole3lactic Acid",
-    "text": "Indole3lactic Acid",
-    "crumbs": [
-      "Sections",
-      "Modeling"
-    ]
-  },
-  {
-    "objectID": "modeling_metabolic_syndrome.html#p-hba",
-    "href": "modeling_metabolic_syndrome.html#p-hba",
-    "title": "Modeling & Assessing Metabolic Syndrome In Rats (Metabolite Added Value)",
-    "section": "P Hba",
-    "text": "P Hba",
-    "crumbs": [
-      "Sections",
-      "Modeling"
-    ]
-  },
-  {
-    "objectID": "modeling_metabolic_syndrome.html#anthranilic-acid",
-    "href": "modeling_metabolic_syndrome.html#anthranilic-acid",
-    "title": "Modeling & Assessing Metabolic Syndrome In Rats (Metabolite Added Value)",
-    "section": "Anthranilic Acid",
-    "text": "Anthranilic Acid",
-    "crumbs": [
-      "Sections",
-      "Modeling"
-    ]
-  },
-  {
-    "objectID": "modeling_metabolic_syndrome.html#indoxyl-sulfate",
-    "href": "modeling_metabolic_syndrome.html#indoxyl-sulfate",
-    "title": "Modeling & Assessing Metabolic Syndrome In Rats (Metabolite Added Value)",
-    "section": "Indoxyl Sulfate",
-    "text": "Indoxyl Sulfate",
-    "crumbs": [
-      "Sections",
-      "Modeling"
-    ]
   }
 ]
